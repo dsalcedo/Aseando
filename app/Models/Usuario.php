@@ -41,4 +41,52 @@ class Usuario extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    /**
+     * @return string
+     */
+    public function getNombreCompletoAttribute(){
+        $nombre_completo = $this->nombre.' '.$this->apellidos;
+        return $nombre_completo;
+    }
+
+    /**
+     * Obtiene el rol del usuario.
+     *
+     * @return QueryBuilder
+     */
+    public function rol(){
+        return $this->belongsTo('App\Models\CatalogoRol');
+    }
+    /**
+     * Obtiene los roles asignados al usuario
+     *
+     * @return mixed
+     */
+    public function roles(){
+        return $this->belongsToMany('App\Models\CatalogoRol', 'rol_usuario', 'usuario_id', 'rol_id');
+    }
+
+    /**
+     * @return array
+     */
+    public function getlistaRolesAttribute()
+    {
+        $rol_lista;
+        foreach ($this->roles as $rol):
+            $rol_lista[]=$rol->clave;
+        endforeach;
+        return  $rol_lista;
+    }
+
+    /**
+     * Check if user has a role.
+     *
+     * @param $role
+     * @return bool
+     * TODO: Checar
+     */
+    public function is($rol){
+        return in_array($rol, $this->lista_roles);
+    }
 }
