@@ -72,7 +72,7 @@ class Usuario extends Model implements AuthenticatableContract,
      */
     public function getlistaRolesAttribute()
     {
-        $rol_lista;
+        $rol_lista = [];
         foreach ($this->roles as $rol):
             $rol_lista[]=$rol->clave;
         endforeach;
