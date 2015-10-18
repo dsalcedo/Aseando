@@ -17,6 +17,9 @@ class CreateUsuarioRolTable extends Migration
             $table->integer('usuario_id')->unsigned();
             $table->integer('rol_id')->unsigned();
             $table->timestamps();
+
+            $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->foreign('rol_id')->references('id')->on('catalogo_rol')->onDelete('cascade');
         });
     }
 

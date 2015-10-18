@@ -33,7 +33,7 @@ class CatalogoRol extends Model{
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function usuario(){
-        return $this->belongsToMany('App\Models\Usuario', 'rol_usuario', 'rol_id', 'usuario_id')->withTimestamps();
+        return $this->belongsToMany('App\Models\Usuario', 'usuario_rol', 'rol_id', 'usuario_id')->withTimestamps();
     }
 
 

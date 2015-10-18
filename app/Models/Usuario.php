@@ -64,7 +64,7 @@ class Usuario extends Model implements AuthenticatableContract,
      * @return mixed
      */
     public function roles(){
-        return $this->belongsToMany('App\Models\CatalogoRol', 'rol_usuario', 'usuario_id', 'rol_id');
+        return $this->belongsToMany('App\Models\CatalogoRol', 'usuario_rol', 'usuario_id', 'rol_id');
     }
 
     /**

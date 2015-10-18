@@ -21,7 +21,7 @@ class UsuariosSeeder extends Seeder {
         $rol_usuario     = CatalogoRol::where(['clave'=>'usuario'])->first()->id;
 
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
-        DB::table('usuario')->truncate();
+        DB::table('usuarios')->truncate();
 
         $usuario = Usuario::create([
             'nombre'   => 'Josafat Daniel', 

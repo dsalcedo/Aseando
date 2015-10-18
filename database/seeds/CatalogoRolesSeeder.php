@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\CatalogoRoles;
+use App\Models\CatalogoRol;
 
 class CatalogoRolesSeeder extends Seeder {
 
@@ -12,22 +12,22 @@ class CatalogoRolesSeeder extends Seeder {
      * @return void
      */
     public function run(){
-
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         DB::table('catalogo_rol')->truncate();
 
-        CatalogoRoles::create([
+        CatalogoRol::create([
             'clave'  => 'administrador',
             'titulo' => 'Administrador del sistema',
             'descripcion' => 'Usuario que permite administrar completamente el sistema.'
         ]);
 
-        CatalogoRoles::create([
+        CatalogoRol::create([
             'clave'  => 'profesional_limpieza',
             'titulo' => 'Profesional de limpieza',
             'descripcion' => 'Profesional de limpieza.'
         ]);
 
-        CatalogoRoles::create([
+        CatalogoRol::create([
             'clave'  => 'usuario',
             'titulo' => 'Usuario',
             'descripcion' => 'Usuario que utiliza la plataforma.'
