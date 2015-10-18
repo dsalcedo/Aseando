@@ -11,6 +11,19 @@
 |
 */
 
+//Website
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('auth/login', [ 'uses'=>'Website@authLogin', 'as'=>'website.auth.login' ]);
+Route::post('auth/login', [ 'uses'=>'Auth\AuthController@postLogin', 'as'=>'website.post-acceso' ]);
+
+//Cuenta
+Route::group(['prefix' => 'cuenta', 'middleware' => 'auth'], function () {
+    Route::get('/', [ 'uses'=>'Cuenta@index', 'as'=>'cuenta.index' ]);
+
+});
+
+
+
+
