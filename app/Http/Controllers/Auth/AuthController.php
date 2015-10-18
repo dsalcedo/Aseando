@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Models\Usuario;
 use Validator;
+use Redis;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+//MODELOS
+use App\Models\Usuario;
 
 class AuthController extends Controller
 {
