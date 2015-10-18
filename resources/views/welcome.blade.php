@@ -67,7 +67,6 @@
                         </div>
                         <div class="form-group" style="margin-top:30px;">
                             <button type="submit" class="btn btn-lg btn-primary btn-block" style="border-radius:3px;">Ingresar</button>
-                            {!! csrf_field() !!}
                         </div>
                     </div>
                 {!! Form::close() !!}
