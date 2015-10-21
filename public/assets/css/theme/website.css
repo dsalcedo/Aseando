@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+
+html, body{
+    height: 100%;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+}
+
+.site-wrapper {
+    background: url('https://az631186.vo.msecnd.net/static/img/fondo-wayook-limpieza.ab43a4c6f4be.jpg') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-box-shadow: inset 0px 49px 43px 8px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: inset 0px 49px 43px 8px rgba(0, 0, 0, 0.30);
+    box-shadow: inset 0px 1000px 43px 8px rgba(0, 0, 0, 0.30);
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-static-top {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.logo-brand{
+    max-width: 200px;
+}
+.container .jumbotron{
+    border-radius: 0px;
+}
+
+.cover-content{
+    margin-top: 100px;
+    vertical-align:middle;
+}
+.cover-content .titulo, .cover-content .sub-titulo{
+    font-family: 'Lato';
+}
+
+.cover-content .titulo{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 0 100px rgba(0,0,0,0.50);
+}
+.cover-content .sub-titulo{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 300;
+    text-shadow: 0 0 30px rgba(0,0,0,0.90);
+}
+.cover-content .text-white{
+    color:#fff;
+}
+
+.navbar-static-top .navbar-nav > li {
+    margin-left: 30px;
+}
+.navbar-static-top .navbar-nav > li > a {
+    padding: 0;
+    line-height: 56px;
+    height: 50px;
+    font-family: 'Lato';
+    font-weight: 300;
+    color: #EFEAEA;
+}
+.navbar-static-top .navbar-nav > li > a:hover{
+    color: #FFFFFF;
+    border-bottom: solid 2px #fff;
+}
+.navbar-static-top .navbar-nav > .nav-signup > a,
+.navbar-default .navbar-nav >
+.nav-signup.open > a {
+    background: #FF534B;
+    display: inline;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow:none;
+    color: #ffffff;
+}
+
+.navbar-static-top .navbar-nav > .nav-signup > a:hover,
+.navbar-static-top .navbar-nav > .nav-signup > a:focus{
+    background: #ff704f;
+    color:#fff;
+}
+
+.btn-primario {
+    width: 250px;
+    color: #fff;
+    background-color: #FF534B;
+    border-color: #E24841;
+    line-height: 1.33333;
+    border-radius: 3px;
+    font-weight: 300;
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+
+.btn-primario:hover,
+.btn-primario:focus {
+    background-color: #ff704f;
+    border-color: #E24841;
+    color: #FFF;
+}
+
+.btn-grande{
+    padding: 15px 45px;
+    font-size: 20px;
+}
+.top-30{
+    margin-top: 30px;
+}
+@media screen and (max-width: 992px) {
+    .cover-content .titulo{
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .cover-content .sub-titulo{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+}
+
+
