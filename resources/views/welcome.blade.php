@@ -18,7 +18,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="{{route('website.index')}}">
                                 <img src="https://ss1.4sqi.net/img/press/swarm/logo/swarm-white-714794457910397de1c4cb800733e402.png" class="logo-brand">
                             </a>
                         </div>
@@ -27,6 +27,7 @@
                                 <li><a href="#">¿Cómo funciona?</a></li>
                                 <li><a href="#">Precios</a></li>
                                 <li><a href="#contact">¿Preguntas?</a></li>
+                                <li><a href="#contact">Blog de limpieza</a></li>
                                 <li><a href="{{route('website.acceso')}}">Iniciar sesion</a></li>
                                 <li class="nav-signup"><a href="#about">¡Quiero trabajar!</a></li>
                             </ul>
@@ -55,43 +56,8 @@
     <img src="http://d304pchb3b61hb.cloudfront.net/img/a/laptop2.jpg" class="img-circle" style="width: 300px;">
     <img src="http://www.encabezadostwitter.com/panel/encabezados/musica-y-relax.jpg" class="img-circle"  style="width: 300px;">
 </div>
-
-
-
-
-
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-            <div class="content">
-
-                    <h2 class="form-signin-heading">Iniciar sesión</h2>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Correo electrónico</label>
-                            <input name="email" class="form-control inputs" id="exampleInputEmail1" placeholder="correo@buen-ejemplo.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Contraseña</label>
-                            <input name="password" type="password" class="form-control inputs" id="exampleInputEmail1" placeholder="••••••••••">
-                        </div>
-                        <div class="form-group">
-                            <a href="" class="link">
-                                ¿Ha olvidado su contraseña?
-                            </a>
-                        </div>
-                        <div class="checkbox" style="margin-left:-15px;">
-                            <label>
-                                <input type="checkbox" name="remember_token" value="remember_token" > Mantener la sesión iniciada
-                            </label>
-                        </div>
-                        <div class="form-group" style="margin-top:30px;">
-                            <button type="submit" class="btn btn-lg btn-primary btn-block" style="border-radius:3px;">Ingresar</button>
-                        </div>
-                    </div>
-
-            </div>
+        <div class="footer">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet atque corporis eligendi error et fugit hic, inventore ipsa magnam mollitia odit, officia praesentium rerum sed sequi vitae voluptatum.
         </div>
         <script>
             var componente =  {!! json_encode($requierejs) !!};
